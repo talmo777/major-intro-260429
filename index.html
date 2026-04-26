@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>수리데이터사이언스학과 전공설명회 2026 | 한양대학교</title>
+<meta name="description" content="AI 시대, 구현을 넘어 정의하는 힘을 기르다. 4.29(수) 13:00 융합교육관 301호. LIONS자율전공학부 대상 체험형 전공설명회.">
+<meta name="keywords" content="한양대학교, 수리데이터사이언스, 전공설명회, LIONS자율전공학부, AI, 데이터사이언스">
+<meta name="author" content="한양대학교 수리데이터사이언스학과">
+<meta name="theme-color" content="#2563EB">
+<!-- OG / 카카오톡 & 인스타 공유 프리뷰 -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="구현을 넘어 정의하는 힘을 기르다">
+<meta property="og:description" content="수리데이터사이언스학과 전공설명회 | 4.29(수) 13:00 융합교육관 301호 | 참가자 전원 식사 제공">
+<meta property="og:site_name" content="한양대학교 수리데이터사이언스학과">
+<meta property="og:locale" content="ko_KR">
+<!-- Twitter/X Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="구현을 넘어 정의하는 힘을 기르다">
+<meta name="twitter:description" content="수리데이터사이언스학과 전공설명회 | 4.29(수) 13:00 | 참가자 전원 식사 제공">
+<!-- Favicon (inline SVG) -->
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%232563EB'/><text x='16' y='23' text-anchor='middle' fill='white' font-size='18' font-weight='bold' font-family='sans-serif'>수</text></svg>">
+<!-- Preconnect for fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;800;900&family=Sora:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#FAFCFF;--card:#FFFFFF;
+  --ink:#0F172A;--ink2:#334155;--ink3:#94A3B8;
+  --blue:#2563EB;--indigo:#4F46E5;--violet:#7C3AED;--cyan:#0891B2;--pink:#EC4899;
+  --grad:linear-gradient(135deg,#2563EB,#7C3AED,#EC4899);
+  --grad2:linear-gradient(135deg,#06B6D4,#2563EB);
+  --glow:0 8px 40px rgba(37,99,235,0.1);
+}
+html{scroll-behavior:smooth}
+body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--ink);overflow-x:hidden}
+.en{font-family:'Sora',sans-serif}
+
+/* ═══ REVEAL ═══ */
+.r{opacity:0;transform:translateY(40px);transition:all .7s cubic-bezier(.16,1,.3,1)}
+.r.v{opacity:1;transform:none}
+.rd1{transition-delay:.1s}.rd2{transition-delay:.2s}.rd3{transition-delay:.3s}.rd4{transition-delay:.4s}
+
+/* ═══ NAV ═══ */
+nav{position:fixed;top:0;width:100%;z-index:100;padding:16px 48px;display:flex;justify-content:space-between;align-items:center;background:rgba(250,252,255,.85);backdrop-filter:blur(20px);border-bottom:1px solid rgba(15,23,42,.04);transition:all .3s}
+nav.scrolled{padding:10px 48px;box-shadow:0 1px 16px rgba(0,0,0,.04)}
+.nav-logo{font-family:'Sora';font-size:12px;font-weight:700;letter-spacing:2.5px;color:var(--ink3);text-transform:uppercase}
+.nav-links{display:flex;gap:28px}
+.nav-links a{font-size:14px;font-weight:500;color:var(--ink2);text-decoration:none;transition:color .3s;position:relative}
+.nav-links a:hover{color:var(--blue)}
+.nav-links a::after{content:'';position:absolute;bottom:-4px;left:0;width:0;height:2px;background:var(--grad);border-radius:2px;transition:width .3s}
+.nav-links a:hover::after{width:100%}
+
+/* ═══ HERO ═══ */
+.hero{min-height:100vh;display:flex;align-items:center;padding:100px 48px 60px;position:relative;overflow:hidden}
+.blob{position:absolute;border-radius:50%;filter:blur(90px);z-index:0}
+.b1{width:500px;height:500px;background:rgba(37,99,235,.06);top:-120px;right:10%;animation:fl 9s ease-in-out infinite}
+.b2{width:400px;height:400px;background:rgba(124,58,237,.05);bottom:5%;left:-5%;animation:fl 11s ease-in-out infinite reverse}
+.b3{width:250px;height:250px;background:rgba(236,72,153,.04);top:40%;left:45%;animation:fl 7s ease-in-out 1s infinite}
+@keyframes fl{0%,100%{transform:translate(0,0)}50%{transform:translate(16px,-16px)}}
+.hero-dots{position:absolute;top:0;left:0;width:100%;height:100%;background:radial-gradient(circle,rgba(37,99,235,.05) 1px,transparent 1px);background-size:36px 36px;z-index:0}
+.hero-inner{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;position:relative;z-index:2;width:100%;max-width:1200px;margin:0 auto}
+.hero-left{max-width:560px}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:white;border:1.5px solid rgba(37,99,235,.12);border-radius:100px;padding:8px 20px;font-size:13px;font-weight:600;color:var(--blue);box-shadow:0 2px 12px rgba(37,99,235,.04);margin-bottom:28px;opacity:0;animation:su .7s ease .2s forwards}
+.hero-badge .pulse{width:7px;height:7px;background:var(--blue);border-radius:50%;box-shadow:0 0 0 0 rgba(37,99,235,.4);animation:ping 2s infinite}
+@keyframes ping{0%{box-shadow:0 0 0 0 rgba(37,99,235,.4)}70%{box-shadow:0 0 0 10px transparent}100%{box-shadow:0 0 0 0 transparent}}
+@keyframes su{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
+.hero h1{font-size:clamp(44px,5.2vw,72px);font-weight:900;line-height:1.1;letter-spacing:-2.5px;opacity:0;animation:su .7s ease .35s forwards}
+.hero h1 .accent{background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-size:200% 200%;animation:gs 4s ease infinite}
+@keyframes gs{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
+.hero-sub{font-size:18px;color:var(--ink2);margin-top:20px;line-height:1.75;opacity:0;animation:su .7s ease .5s forwards}
+.hero-actions{display:flex;gap:14px;margin-top:32px;opacity:0;animation:su .7s ease .65s forwards;flex-wrap:wrap}
+.btn-p{display:inline-flex;align-items:center;gap:8px;padding:14px 32px;background:var(--grad);background-size:200% 200%;animation:gs 4s ease infinite;border:none;border-radius:13px;color:#fff;font-size:16px;font-weight:700;font-family:inherit;cursor:pointer;transition:transform .3s,box-shadow .3s;text-decoration:none}
+.btn-p:hover{transform:translateY(-2px);box-shadow:0 12px 40px rgba(37,99,235,.18)}
+.btn-g{display:inline-flex;align-items:center;gap:8px;padding:14px 28px;background:transparent;border:1.5px solid rgba(15,23,42,.1);border-radius:13px;color:var(--ink2);font-size:16px;font-weight:600;font-family:inherit;cursor:pointer;transition:all .3s;text-decoration:none}
+.btn-g:hover{border-color:var(--blue);color:var(--blue);background:rgba(37,99,235,.02)}
+
+/* ── HERO RIGHT: INTERACTIVE DEMO ── */
+.hero-demo{background:white;border:1.5px solid rgba(15,23,42,.06);border-radius:24px;padding:32px;box-shadow:0 4px 32px rgba(37,99,235,.06);opacity:0;animation:su .8s ease .5s forwards;position:relative;overflow:hidden}
+.hero-demo::before{content:'';position:absolute;top:-1px;left:20%;right:20%;height:3px;background:var(--grad);border-radius:3px}
+.demo-title{font-family:'Sora';font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:20px}
+.demo-q{font-size:14px;font-weight:600;color:var(--ink);margin-bottom:12px}
+.demo-options{display:flex;flex-direction:column;gap:8px;margin-bottom:20px}
+.demo-opt{padding:10px 16px;border:1.5px solid rgba(15,23,42,.06);border-radius:12px;font-size:14px;font-weight:500;color:var(--ink2);cursor:pointer;transition:all .3s;background:var(--bg)}
+.demo-opt:hover,.demo-opt.active{border-color:var(--blue);color:var(--blue);background:rgba(37,99,235,.03)}
+.demo-result{background:var(--bg);border-radius:16px;padding:20px;min-height:100px;transition:all .4s}
+.demo-result .rank-item{display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px solid rgba(15,23,42,.04);font-size:14px}
+.demo-result .rank-item:last-child{border:none}
+.demo-result .rank-num{font-family:'Sora';font-weight:800;width:24px}
+.demo-result .rank-num.n1{color:var(--blue)}.demo-result .rank-num.n2{color:var(--violet)}.demo-result .rank-num.n3{color:var(--cyan)}
+.demo-result .rank-name{font-weight:600;flex:1;margin-left:8px}
+.demo-result .rank-score{font-family:'Sora';font-size:12px;font-weight:600;color:var(--ink3)}
+.demo-msg{text-align:center;padding:24px 0;font-size:15px;font-weight:600;color:var(--ink2)}
+.demo-msg em{color:var(--blue);font-style:normal;font-weight:800}
+
+.hero-scroll{position:absolute;bottom:24px;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:4px;color:var(--ink3);font-size:10px;letter-spacing:3px;animation:bnc 2.5s ease infinite;z-index:2}
+.hero-scroll .chev{width:18px;height:18px;border-right:2px solid var(--ink3);border-bottom:2px solid var(--ink3);transform:rotate(45deg)}
+@keyframes bnc{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(8px)}}
+
+/* ═══ MARQUEE ═══ */
+.mq-wrap{overflow:hidden;padding:28px 0;border-top:1px solid rgba(15,23,42,.04);border-bottom:1px solid rgba(15,23,42,.04);background:white}
+.mq-wrap:hover .mq{animation-play-state:paused}
+.mq{display:flex;gap:40px;animation:mqs 22s linear infinite;width:max-content}
+.mq span{font-family:'Sora';font-size:13px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--ink3);white-space:nowrap;transition:color .3s}
+.mq span:hover{color:var(--blue)}
+.mq .dt{background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;font-size:16px}
+@keyframes mqs{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* ═══ SECTIONS ═══ */
+section{padding:110px 48px}
+.s-label{font-family:'Sora';font-size:12px;font-weight:700;letter-spacing:5px;text-transform:uppercase;background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:14px}
+.s-title{font-size:clamp(34px,4.2vw,52px);font-weight:900;line-height:1.15;letter-spacing:-2px;margin-bottom:18px;max-width:660px}
+.s-desc{font-size:17px;color:var(--ink2);line-height:1.8;max-width:560px}
+
+/* ═══ WHY ═══ */
+.why{background:white}
+.why-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:48px}
+.wc{border:1.5px solid rgba(15,23,42,.05);border-radius:24px;padding:44px;position:relative;overflow:hidden;transition:all .45s;background:var(--bg)}
+.wc:hover{border-color:rgba(37,99,235,.12);box-shadow:var(--glow);transform:translateY(-5px)}
+.wc::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--grad);transform:scaleX(0);transform-origin:left;transition:transform .45s}
+.wc:hover::before{transform:scaleX(1)}
+.wc .num{font-family:'Sora';font-size:72px;font-weight:900;background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;opacity:.08;position:absolute;top:-4px;right:16px;line-height:1}
+.chip{display:inline-block;font-size:12px;font-weight:700;padding:5px 14px;border-radius:100px;margin-bottom:18px;letter-spacing:.3px}
+.chip-b{background:rgba(239,68,68,.06);color:#EF4444}.chip-a{background:rgba(37,99,235,.06);color:var(--blue)}
+.wc h3{font-size:26px;font-weight:800;margin-bottom:12px;letter-spacing:-.5px}
+.wc p{font-size:15px;color:var(--ink2);line-height:1.75}
+
+/* ═══ ACTIVITY ═══ */
+.activity{position:relative}
+.tl{margin-top:48px;display:flex;flex-direction:column;position:relative;max-width:720px}
+.tl::before{content:'';position:absolute;left:33px;top:8px;bottom:8px;width:3px;background:linear-gradient(180deg,var(--blue),var(--violet),var(--cyan));border-radius:3px;opacity:.35}
+.ts{display:flex;gap:32px;padding:32px 0;position:relative}
+.td{flex-shrink:0;width:68px;height:68px;border-radius:18px;background:white;border:2px solid rgba(37,99,235,.1);display:flex;align-items:center;justify-content:center;font-family:'Sora';font-size:20px;font-weight:800;color:var(--blue);z-index:2;transition:all .4s;box-shadow:0 2px 10px rgba(37,99,235,.04)}
+.ts:hover .td{background:var(--blue);color:white;border-color:var(--blue);box-shadow:0 8px 28px rgba(37,99,235,.18);transform:scale(1.06)}
+.tb{padding-top:6px}
+.tt{font-family:'Sora';font-size:12px;font-weight:600;color:var(--cyan);letter-spacing:1px;margin-bottom:4px}
+.tb h3{font-size:22px;font-weight:800;margin-bottom:6px;letter-spacing:-.5px}
+.tb p{font-size:15px;color:var(--ink2);line-height:1.7}
+
+.hl-box{margin-top:48px;background:white;border:1.5px solid rgba(37,99,235,.06);border-radius:24px;padding:48px 56px;text-align:center;position:relative;overflow:hidden}
+.hl-box::before{content:'';position:absolute;top:-1px;left:20%;right:20%;height:3px;background:var(--grad);border-radius:3px}
+.hl-box h3{font-size:30px;font-weight:900;letter-spacing:-1px;margin-bottom:14px}
+.hl-box h3 .hl{background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.hl-box p{font-size:17px;color:var(--ink2);line-height:1.7;max-width:520px;margin:0 auto}
+
+/* ═══ CHECKLIST ═══ */
+.check-sec{background:white}
+.ck-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px}
+.ck{background:var(--bg);border:1.5px solid rgba(15,23,42,.04);border-radius:24px;padding:40px 32px;text-align:center;transition:all .4s}
+.ck:hover{border-color:rgba(37,99,235,.1);box-shadow:var(--glow);transform:translateY(-5px)}
+.ck-ic{font-size:48px;margin-bottom:20px;display:block}
+.ck h3{font-size:20px;font-weight:800;margin-bottom:8px}
+.ck p{font-size:14px;color:var(--ink2);line-height:1.6}
+.ck-b{display:inline-block;margin-top:14px;font-size:12px;font-weight:700;padding:5px 14px;border-radius:100px}
+.b1{background:rgba(37,99,235,.06);color:var(--blue)}.b2{background:rgba(16,185,129,.06);color:#059669}.b3{background:rgba(245,158,11,.06);color:#D97706}
+
+/* ═══ CTA ═══ */
+.cta{padding:110px 48px;text-align:center;position:relative;overflow:hidden}
+.cta .bg-blob{position:absolute;width:500px;height:500px;border-radius:50%;background:rgba(37,99,235,.03);top:50%;left:50%;transform:translate(-50%,-50%);filter:blur(100px)}
+.cta>*{position:relative;z-index:2}
+.urgency{display:inline-flex;align-items:center;gap:8px;background:rgba(239,68,68,.06);border:1px solid rgba(239,68,68,.12);border-radius:100px;padding:8px 20px;font-size:13px;font-weight:700;color:#EF4444;margin-bottom:24px;animation:pulse-urgency 2s ease infinite}
+@keyframes pulse-urgency{0%,100%{opacity:1}50%{opacity:.7}}
+.urgency .live-dot{width:7px;height:7px;background:#EF4444;border-radius:50%;animation:ping 1.5s infinite}
+.i-row{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin:40px auto;max-width:780px}
+.ib{background:white;border:1.5px solid rgba(15,23,42,.05);border-radius:18px;padding:28px 20px;transition:all .4s}
+.ib:hover{border-color:rgba(37,99,235,.1);box-shadow:var(--glow);transform:translateY(-3px)}
+.il{font-family:'Sora';font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:8px}
+.iv{font-size:20px;font-weight:800;margin-bottom:3px;letter-spacing:-.3px}
+.id{font-size:12px;color:var(--ink3)}
+.meal-btn{display:inline-flex;align-items:center;gap:8px;background:var(--grad);background-size:200% 200%;animation:gs 4s ease infinite;border-radius:14px;padding:16px 32px;font-size:17px;font-weight:700;color:white;margin-top:28px;box-shadow:0 8px 32px rgba(37,99,235,.14)}
+
+footer{padding:28px 48px;border-top:1px solid rgba(15,23,42,.05);display:flex;justify-content:space-between;font-size:12px;color:var(--ink3)}
+
+/* ═══ MOBILE ═══ */
+@media(max-width:900px){
+  .hero-inner{grid-template-columns:1fr;gap:32px}
+  .hero-demo{max-width:400px}
+}
+@media(max-width:768px){
+  nav{padding:12px 20px}.nav-links{display:none}
+  .hero,section,.cta,footer{padding-left:20px;padding-right:20px}
+  .hero{padding-top:80px;padding-bottom:40px}
+  .why-grid,.ck-grid{grid-template-columns:1fr}
+  .i-row{grid-template-columns:1fr 1fr;gap:12px}
+  .hero-actions{flex-direction:column}
+  .hl-box{padding:32px 24px}
+  .hero-scroll{display:none}
+}
+/* ═══ ACCESSIBILITY ═══ */
+.skip-nav{position:absolute;top:-100px;left:16px;background:var(--blue);color:white;padding:12px 24px;border-radius:8px;font-weight:700;z-index:200;transition:top .3s}
+.skip-nav:focus{top:16px}
+*:focus-visible{outline:3px solid var(--blue);outline-offset:3px;border-radius:4px}
+a:focus-visible,button:focus-visible,.demo-opt:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+/* ═══ LOADING ═══ */
+.loader{position:fixed;top:0;left:0;width:100%;height:100%;background:var(--bg);z-index:9999;display:flex;align-items:center;justify-content:center;transition:opacity .5s,visibility .5s}
+.loader.hide{opacity:0;visibility:hidden}
+.loader-bar{width:120px;height:3px;background:rgba(37,99,235,.1);border-radius:3px;overflow:hidden}
+.loader-bar::after{content:'';display:block;width:40%;height:100%;background:var(--grad);border-radius:3px;animation:load .8s ease-in-out infinite}
+@keyframes load{0%{transform:translateX(-100%)}100%{transform:translateX(350%)}}
+/* ═══ REDUCED MOTION ═══ */
+@media(prefers-reduced-motion:reduce){
+  *{animation-duration:.01ms!important;transition-duration:.01ms!important}
+  .r{opacity:1;transform:none}
+}
+</style>
+<!-- Structured Data -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"EducationEvent",
+  "name":"수리데이터사이언스학과 전공설명회 2026",
+  "description":"AI 시대, 구현을 넘어 정의하는 힘을 기르다. 실제 데이터와 AI 도구로 웹페이지를 만들어보는 체험형 전공설명회.",
+  "startDate":"2026-04-29T13:00:00+09:00",
+  "endDate":"2026-04-29T14:30:00+09:00",
+  "location":{"@type":"Place","name":"한양대학교 융합교육관 301호","address":"서울특별시 성동구 왕십리로 222"},
+  "organizer":{"@type":"Organization","name":"한양대학교 수리데이터사이언스학과"},
+  "offers":{"@type":"Offer","price":"0","priceCurrency":"KRW","description":"무료, 참가자 전원 식사 제공"}
+}
+</script>
+</head>
+<body>
+<!-- Loading -->
+<div class="loader" id="loader" aria-hidden="true"><div class="loader-bar"></div></div>
+<!-- Skip Navigation -->
+<a href="#main" class="skip-nav">본문으로 건너뛰기</a>
+
+<nav id="nav" role="navigation" aria-label="메인 네비게이션">
+  <div class="nav-logo en">수리데이터사이언스학과</div>
+  <div class="nav-links"><a href="#why">왜 중요한가</a><a href="#activity">활동 내용</a><a href="#check">준비물</a><a href="#info">참여 안내</a></div>
+</nav>
+
+<!-- ═══ HERO ═══ -->
+<main id="main">
+<section class="hero" aria-label="히어로 영역">
+  <div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
+  <div class="hero-dots"></div>
+  <div class="hero-inner">
+    <div class="hero-left">
+      <div class="hero-badge"><span class="pulse"></span><span class="en">2026 MAJOR INTRODUCTION</span></div>
+      <h1>구현을 넘어<br><span class="accent">정의하는 힘</span><br>을 기르다</h1>
+      <p class="hero-sub">만드는 건 AI가 해준다. 그래서, 뭘 만들 건데?<br>전공설명회에서 직접 체험해보세요.</p>
+      <div class="hero-actions">
+        <a href="#info" class="btn-p">참여 안내 →</a>
+        <a href="#activity" class="btn-g">활동 먼저 볼래요</a>
+      </div>
+    </div>
+    <!-- INTERACTIVE DEMO -->
+    <div class="hero-demo" id="demo">
+      <div class="demo-title">LIVE DEMO — 정의가 결과를 바꾼다</div>
+      <div class="demo-q">"살기 좋은 도시"를 누구 기준으로 정의할까요?</div>
+      <div class="demo-options">
+        <div class="demo-opt" role="button" tabindex="0" data-view="init" onclick="showRank('young')" onkeydown="if(event.key==='Enter')showRank('young')">👨‍💻 20대 사회초년생</div>
+        <div class="demo-opt" role="button" tabindex="0" data-view="init" onclick="showRank('retire')" onkeydown="if(event.key==='Enter')showRank('retire')">🌿 은퇴 후 귀농 희망자</div>
+      </div>
+      <div class="demo-result" id="demoResult">
+        <div class="demo-msg">위에서 관점을 선택해보세요 👆<br>같은 데이터인데 결과가 달라집니다</div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-scroll en"><span style="font-weight:600">SCROLL</span><div class="chev"></div></div>
+</section>
+
+<!-- ═══ MARQUEE ═══ -->
+<div class="mq-wrap">
+  <div class="mq">
+    <span>AI 시대의 핵심 역량</span><span class="dt">●</span><span>수학적 사고</span><span class="dt">●</span><span>정의하는 힘</span><span class="dt">●</span><span>DATA SCIENCE</span><span class="dt">●</span><span>MATHEMATICAL THINKING</span><span class="dt">●</span><span>DEFINE BEFORE BUILD</span><span class="dt">●</span>
+    <span>AI 시대의 핵심 역량</span><span class="dt">●</span><span>수학적 사고</span><span class="dt">●</span><span>정의하는 힘</span><span class="dt">●</span><span>DATA SCIENCE</span><span class="dt">●</span><span>MATHEMATICAL THINKING</span><span class="dt">●</span><span>DEFINE BEFORE BUILD</span><span class="dt">●</span>
+  </div>
+</div>
+
+<!-- ═══ WHY ═══ -->
+<section class="why" id="why" aria-label="왜 중요한가">
+  <div class="s-label en r">WHY IT MATTERS</div>
+  <h2 class="s-title r rd1">AI 시대,<br>게임의 규칙이 바뀌었다</h2>
+  <p class="s-desc r rd2">코드 몰라도 웹사이트 만들고, 데이터 분석도 AI가 해줘요.<br>누구나 만들 수 있는 시대. 그러면 뭐가 달라져야 할까요?</p>
+  <div class="why-grid">
+    <div class="wc r rd1"><div class="num en">01</div><span class="chip chip-b">BEFORE</span><h3>구현의 시대는 끝났다</h3><p>컴공, AI학과의 핵심이었던 "만들 수 있다"의 가치가 사라지고 있어요. 이젠 누구나 AI로 뭔가를 만들 수 있으니까요.</p></div>
+    <div class="wc r rd2"><div class="num en">02</div><span class="chip chip-a">AFTER</span><h3>정의의 시대가 왔다</h3><p>뭘 만들지, 왜 만들지, 어떤 기준으로 판단할지 — 이걸 정의하는 사람이 결과를 바꿔요. 이 힘의 메커니즘이 바로 수학이에요.</p></div>
+  </div>
+</section>
+
+<!-- ═══ ACTIVITY ═══ -->
+<section class="activity" id="activity" aria-label="활동 내용">
+  <div class="s-label en r">WHAT WE DO</div>
+  <h2 class="s-title r rd1">설명회에서<br>이런 걸 해봐요</h2>
+  <p class="s-desc r rd2">AI 도구와 실제 공개 데이터로 웹페이지를 직접 만들어보고,<br>정의가 결과를 어떻게 바꾸는지 눈으로 확인합니다.</p>
+  <div class="tl">
+    <div class="ts r"><div class="td en">01</div><div class="tb"><div class="tt en">13:15 – 13:25</div><h3>AI 도구 세팅</h3><p>Claude AI에 접속하고 실제 공개 데이터(17개 시도 통계)를 다운받아요.</p></div></div>
+    <div class="ts r rd1"><div class="td en">02</div><div class="tb"><div class="tt en">13:30 – 13:55</div><h3>"살기 좋은 도시 랭킹" 웹페이지 제작</h3><p>데이터를 AI에 던져주고, 각자 기준으로 도시 랭킹 웹페이지를 만들어봐요.</p></div></div>
+    <div class="ts r rd2"><div class="td en">03</div><div class="tb"><div class="tt en">13:55 – 14:05</div><h3>결과 공유</h3><p>서로 만든 결과를 공유하고 비교해봐요. 같은 데이터인데 결과가 같을까요?</p></div></div>
+    <div class="ts r rd3"><div class="td en">04</div><div class="tb"><div class="tt en">14:05 – 14:15</div><h3>왜 다를까? — 핵심 메시지</h3><p>정의가 달라지면 결과가 완전히 뒤집힙니다. 직접 확인하는 순간이에요.</p></div></div>
+  </div>
+  <div class="hl-box r"><h3>같은 데이터를 줘도<br>결과가 <span class="hl">같을 수 없는 이유</span></h3><p>데이터를 어떻게 정의하냐에 따라 결과가 완전히 달라져요.<br>60분 안에 직접 만들고, 그 차이를 눈으로 확인해봐요.</p></div>
+</section>
+
+<!-- ═══ CHECKLIST ═══ -->
+<section class="check-sec" id="check" aria-label="준비물">
+  <div class="s-label en r">CHECKLIST</div>
+  <h2 class="s-title r rd1">참여 전에<br>이것만 준비하세요</h2>
+  <div class="ck-grid">
+    <div class="ck r rd1"><span class="ck-ic">💻</span><h3>노트북 지참 권장</h3><p>AI로 직접 만들어보는 활동이라<br>노트북이 제일 편해요</p><span class="ck-b b1">강력 추천</span></div>
+    <div class="ck r rd2"><span class="ck-ic">📱</span><h3>모바일도 OK</h3><p>노트북 없어도 핸드폰이나<br>태블릿으로 충분히 참여 가능</p><span class="ck-b b2">걱정 마세요</span></div>
+    <div class="ck r rd3"><span class="ck-ic">📶</span><h3>Wi-Fi 제공</h3><p>HY-WIFI 사용 가능<br>별도 준비물 없어요</p><span class="ck-b b3">현장 제공</span></div>
+  </div>
+</section>
+
+<!-- ═══ CTA ═══ -->
+<section class="cta" id="info" aria-label="참여 안내">
+  <div class="bg-blob"></div>
+  <div class="urgency r"><span class="live-dot"></span><span class="en">선착순 20명 — 자리가 많지 않아요</span></div>
+  <h2 class="s-title r rd1" style="margin:0 auto 8px;text-align:center;max-width:none">같이 해봐요<br>60분이면 충분해요</h2>
+  <div class="i-row r rd2">
+    <div class="ib"><div class="il en">Date</div><div class="iv">4.29 수</div><div class="id">13:00 – 14:30</div></div>
+    <div class="ib"><div class="il en">Location</div><div class="iv">융합교육관 301</div><div class="id">한양대학교</div></div>
+    <div class="ib"><div class="il en">For</div><div class="iv" style="font-size:16px">LIONS자율전공학부</div><div class="id">+ 학과 선착순 20명</div></div>
+    <div class="ib"><div class="il en">Meal</div><div class="iv">식사 제공</div><div class="id">참가자 전원</div></div>
+  </div>
+  <div class="meal-btn r rd3">🎁 참가자 전원 간단 식사 제공</div>
+</section>
+</main>
+
+<footer role="contentinfo">
+  <span>주관 : 정헤영 교수 · 운영 : 수리데이터사이언스 멘토팀</span>
+  <span class="en">HANYANG UNIV. 2026</span>
+</footer>
+
+<script>
+// Loading screen
+window.addEventListener('load',()=>{document.getElementById('loader').classList.add('hide')});
+// Nav scroll
+const nav=document.getElementById('nav');
+window.addEventListener('scroll',()=>nav.classList.toggle('scrolled',window.scrollY>50));
+
+// Scroll reveal with re-observe
+const obs=new IntersectionObserver(es=>{es.forEach(e=>{
+  if(e.isIntersecting)e.target.classList.add('v');
+  else e.target.classList.remove('v');
+})},{threshold:.1,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.r').forEach(el=>obs.observe(el));
+
+// Interactive demo
+const data={
+  young:[
+    {name:'대전',score:'92.4',tip:'전세 저렴 + 교통 편리'},
+    {name:'광주',score:'89.1',tip:'문화시설 풍부'},
+    {name:'대구',score:'86.7',tip:'생활비 낮음'},
+  ],
+  retire:[
+    {name:'전남',score:'94.2',tip:'녹지 최고 + 의료 접근성'},
+    {name:'강원',score:'91.8',tip:'자연환경 + 안전'},
+    {name:'경북',score:'88.5',tip:'저렴한 주거 + 녹지'},
+  ]
+};
+function showRank(type){
+  document.querySelectorAll('.demo-opt').forEach(o=>o.classList.remove('active'));
+  event.target.classList.add('active');
+  const d=data[type];
+  const label=type==='young'?'사회초년생 기준: 주거비·교통·문화':'은퇴자 기준: 의료·녹지·안전';
+  let html='<div style="font-size:12px;font-weight:700;color:var(--ink3);margin-bottom:12px;font-family:Sora;letter-spacing:1px">'+label+'</div>';
+  d.forEach((r,i)=>{
+    html+=`<div class="rank-item"><span class="rank-num n${i+1}">${i+1}</span><span class="rank-name">${r.name}</span><span class="rank-score">${r.score}점</span></div>`;
+  });
+  html+='<div style="margin-top:16px;text-align:center;font-size:13px;font-weight:700;color:var(--violet)">같은 데이터인데 1위가 완전히 다르다 👀</div>';
+  document.getElementById('demoResult').innerHTML=html;
+}
+</script>
+</body>
+</html>
